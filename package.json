@@ -1,0 +1,23 @@
+{
+  "name": "coub_test",
+  "version": "1.0.0",
+  "description": "coub job application project",
+  "main": "index.js",
+  "dependencies": {
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoxWhite/coub_test.git"
+  },
+  "author": "Egor Belov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FoxWhite/coub_test/issues"
+  },
+  "homepage": "https://github.com/FoxWhite/coub_test#readme"
+}

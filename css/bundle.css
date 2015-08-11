@@ -1,0 +1,119 @@
+/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@media screen {
+  /* line 1, ../sass/_promo-page.sass */
+  .samsung-promo {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    background: #000 url('../img/bg.jpg?1439243129') no-repeat center top;
+    height: 100%;
+    min-height: 1800px;
+    font-size: 1rem;
+    line-height: 1.05;
+  }
+}
+
+@media screen {
+  /* line 1, ../sass/_header.sass */
+  .header {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    z-index: 100;
+  }
+  /* line 9, ../sass/_header.sass */
+  .header-content {
+    position: relative;
+    width: 983px;
+    height: 60px;
+    padding: 15px 0px;
+    margin: 0 auto;
+  }
+  /* line 16, ../sass/_header.sass */
+  .header-logo {
+    text-align: center;
+    width: 98px;
+    height: 19px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 16px;
+  }
+}
+
+/* line 2, ../sass/_common.sass */
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+/* line 5, ../sass/_common.sass */
+.clearfix::after {
+  clear: both;
+}
+
+/*# sourceMappingURL=bundle.css.map */
