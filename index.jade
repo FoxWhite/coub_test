@@ -10,9 +10,21 @@ html(lang='ru')
             .header-bg
             .header-content.clearfix
                 .header-left
-                    .header-logo
+                    .header-logo.ib
                         a(href='http://coub.com/')
                             img(src='img/logo.png')
-                    .header-search
+                    .header-search.ib
                         input(type='text', name='search', placeholder ='Search')
+                    .header-nav.ib
+                        ul.header-navlist
+                            li.navitem.featured.ib
+                                a(href='http://coub.com/explore') Featured
+                            li.navitem.popular.ib
+                                a(href='http://coub.com/explore/hot') Popular
+                
                 .header-right
+                    .header-login.ib
+                        .userbtn.ib.signup Sign up
+                        .userbtn.ib.login Log in
+                    .header-create.ib
+                        a(href='http://coub.com/create') Create

@@ -63,6 +63,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 2, ../sass/_common.sass */
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+}
+/* line 5, ../sass/_common.sass */
+.clearfix::after {
+  clear: both;
+}
+
+/* line 8, ../sass/_common.sass */
+.ib {
+  display: inline-block;
+  vertical-align: top;
+}
+
 @media screen {
   /* line 1, ../sass/_promo-page.sass */
   .samsung-promo {
@@ -94,6 +110,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin: 0 auto;
   }
   /* line 16, ../sass/_header.sass */
+  .header-content .header-left {
+    float: left;
+  }
+  /* line 18, ../sass/_header.sass */
+  .header-content .header-right {
+    float: right;
+    margin-top: 1px;
+  }
+  /* line 22, ../sass/_header.sass */
   .header-logo {
     text-align: center;
     width: 98px;
@@ -106,31 +131,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 26, ../sass/_header.sass */
-  .header-logo .header-logo {
+  /* line 22, ../sass/_header.sass */
+  .header-logo {
     text-align: left;
-    width: inherit;
-    height: inherit;
+    width: 148px;
+    height: 30px;
     position: relative;
     top: 1px;
     left: -1px;
   }
 }
 @media screen {
-  /* line 34, ../sass/_header.sass */
+  /* line 39, ../sass/_header.sass */
   .header-logo a img {
     position: absolute;
     left: 0;
     top: 0;
   }
-  /* line 39, ../sass/_header.sass */
-  .header-search {
-    display: inline-block;
-    margin: 2px 0 0 4px;
-    vertical-align: top;
-  }
   /* line 44, ../sass/_header.sass */
+  .header-search {
+    margin: 2px 0 0 4px;
+  }
+  /* line 47, ../sass/_header.sass */
   .header-search input[type=text] {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
     font-size: 13px;
     padding: 4px 5px 5px 13px;
     width: 242px;
@@ -139,20 +164,102 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 30px;
     box-sizing: border-box;
   }
-  /* line 53, ../sass/_header.sass */
+  /* line 58, ../sass/_header.sass */
   .header-search input[type=text]:hover, .header-search input[type=text]:focus {
     box-shadow: 0px 0px 0px 3px #1e39f6;
   }
-}
-
-/* line 2, ../sass/_common.sass */
-.clearfix::before, .clearfix::after {
-  content: " ";
-  display: table;
-}
-/* line 5, ../sass/_common.sass */
-.clearfix::after {
-  clear: both;
+  /* line 60, ../sass/_header.sass */
+  .header-nav {
+    margin: 2px 0 0 4px;
+  }
+  /* line 63, ../sass/_header.sass */
+  .header-nav .navitem {
+    position: relative;
+    cursor: pointer;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 30px;
+  }
+  /* line 69, ../sass/_header.sass */
+  .header-nav .navitem:hover {
+    background-color: #1e39f6;
+  }
+  /* line 72, ../sass/_header.sass */
+  .header-nav .navitem a {
+    color: #fff;
+    font-size: 13px;
+    padding: 0 16px 0 37px;
+    text-decoration: none;
+  }
+  /* line 77, ../sass/_header.sass */
+  .header-nav .navitem a::before {
+    position: absolute;
+    content: "";
+  }
+  /* line 81, ../sass/_header.sass */
+  .header-nav .navitem.featured a::before {
+    background: url('../img/icn_star.png?1439416934');
+    width: 17px;
+    height: 17px;
+    top: 4px;
+    left: 12px;
+  }
+  /* line 87, ../sass/_header.sass */
+  .header-nav .navitem.popular a::before {
+    background: url('../img/icn_fire.png?1439416934');
+    width: 13px;
+    height: 19px;
+    top: 2px;
+    left: 15px;
+  }
+  /* line 94, ../sass/_header.sass */
+  .header-login {
+    margin-top: 3px;
+  }
+  /* line 96, ../sass/_header.sass */
+  .header-login .userbtn {
+    padding: 0px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+  }
+  /* line 104, ../sass/_header.sass */
+  .header-login .userbtn:hover {
+    text-decoration: underline;
+  }
+  /* line 107, ../sass/_header.sass */
+  .header-create {
+    width: 106px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    background-color: #FFF;
+    position: relative;
+  }
+  /* line 114, ../sass/_header.sass */
+  .header-create:hover {
+    box-shadow: 0px 0px 0px 3px #1e39f6;
+  }
+  /* line 116, ../sass/_header.sass */
+  .header-create a {
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 43px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  /* line 121, ../sass/_header.sass */
+  .header-create a::before {
+    position: absolute;
+    content: "";
+    background: url('../img/icn_create.png?1439416934');
+    width: 22px;
+    height: 16px;
+    top: 7px;
+    left: 12px;
+  }
 }
 
 /*# sourceMappingURL=bundle.css.map */
