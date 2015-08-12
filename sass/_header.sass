@@ -23,14 +23,32 @@
             right: 0px
             top: 16px
             @media only screen and (min-width: 768px)
-                text-align: left
-                width: inherit
-                height: inherit
-                position: relative
-                top: 1px
-                left: -1px
+                .header-logo
+                    text-align: left
+                    width: inherit
+                    height: inherit
+                    position: relative
+                    top: 1px
+                    left: -1px
 
             a img
                 position: absolute
                 left: 0
                 top: 0
+
+        &-search
+            display: inline-block
+            margin: 2px 0 0 4px
+            vertical-align: top
+
+            input[type=text]
+                font-size: 13px
+                padding: 4px 5px 5px 13px
+                width: 242px
+                height: 26px
+                border: none
+                border-radius: 30px
+                box-sizing: border-box
+                s
+                &:hover, &:focus
+                    box-shadow: 0px 0px 0px 3px #1e39f6
