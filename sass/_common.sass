@@ -1,3 +1,17 @@
+
+@font-face 
+    font-family: "Samsung Interface"
+    src: url('../fonts/samsung-interface.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal
+
+@font-face 
+    font-family: helveticacoub-bold
+    src: url('../fonts/helveticacoub-bold.woff') format('woff2')
+    font-weight: bold
+    font-style: normal
+
+
 .clearfix
     &::before, &::after
         content: " "
@@ -8,3 +22,15 @@
 .ib
     display: inline-block
     vertical-align: top  
+
+=white_btn($w)
+    height: 30px
+    width: #{$w}px
+    line-height: 30px
+    border-radius: 30px
+    background-color: #FFF
+    position: relative
+    cursor: pointer
+    &:hover
+        box-shadow: 0px 0px 0px 3px #1e39f6
+

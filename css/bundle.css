@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,60 +20,72 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 2, ../sass/_common.sass */
+@font-face {
+  font-family: "Samsung Interface";
+  src: url("../fonts/samsung-interface.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: helveticacoub-bold;
+  src: url("../fonts/helveticacoub-bold.woff") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 16, ../sass/_common.sass */
 .clearfix::before, .clearfix::after {
   content: " ";
   display: table;
 }
-/* line 5, ../sass/_common.sass */
+/* line 19, ../sass/_common.sass */
 .clearfix::after {
   clear: both;
 }
 
-/* line 8, ../sass/_common.sass */
+/* line 22, ../sass/_common.sass */
 .ib {
   display: inline-block;
   vertical-align: top;
@@ -84,11 +96,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .samsung-promo {
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
-    background: #000 url('../img/bg.jpg?1439243129') no-repeat center top;
+    background: #000 url('../img/bg.jpg?1439449798') no-repeat center top;
     height: 100%;
     min-height: 1800px;
     font-size: 1rem;
     line-height: 1.05;
+  }
+  /* line 15, ../sass/_promo-page.sass */
+  .samsung-promo .page_container {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin: 0px auto -60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 15, ../sass/_promo-page.sass */
+  .samsung-promo .page_container {
+    width: 640px;
+    padding-top: 63px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 15, ../sass/_promo-page.sass */
+  .samsung-promo .page_container {
+    width: 970px;
+    padding-top: 63px;
   }
 }
 
@@ -202,7 +236,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   /* line 82, ../sass/_header.sass */
   .header-nav .navitem.featured a::before {
-    background: url('../img/icn_star.png?1439416934');
+    background: url('../img/icn_star.png?1439449798');
     width: 17px;
     height: 17px;
     top: 4px;
@@ -210,7 +244,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   /* line 88, ../sass/_header.sass */
   .header-nav .navitem.popular a::before {
-    background: url('../img/icn_fire.png?1439416934');
+    background: url('../img/icn_fire.png?1439449798');
     width: 13px;
     height: 19px;
     top: 2px;
@@ -236,35 +270,135 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   /* line 108, ../sass/_header.sass */
   .header-create {
-    width: 106px;
     height: 30px;
+    width: 106px;
     line-height: 30px;
     border-radius: 30px;
     background-color: #FFF;
     position: relative;
     cursor: pointer;
   }
-  /* line 116, ../sass/_header.sass */
+  /* line 34, ../sass/_common.sass */
   .header-create:hover {
     box-shadow: 0px 0px 0px 3px #1e39f6;
   }
-  /* line 118, ../sass/_header.sass */
+  /* line 110, ../sass/_header.sass */
   .header-create a {
     font-size: 14px;
     text-decoration: none;
     margin-left: 43px;
     color: rgba(0, 0, 0, 0.7);
   }
-  /* line 123, ../sass/_header.sass */
+  /* line 115, ../sass/_header.sass */
   .header-create a::before {
     position: absolute;
     content: "";
-    background: url('../img/icn_create.png?1439416934');
+    background: url('../img/icn_create.png?1439449798');
     width: 22px;
     height: 16px;
     top: 7px;
     left: 12px;
   }
+}
+
+/* line 1, ../sass/_promo-container.sass */
+.promo-container {
+  color: #fff;
+  font-family: "Samsung Interface", "Lucida Grande", Helvetica, "sans-serif";
+  position: relative;
+}
+/* line 6, ../sass/_promo-container.sass */
+.promo-container .promo-block {
+  position: absolute;
+}
+/* line 9, ../sass/_promo-container.sass */
+.promo-container .promo-support {
+  left: -3px;
+  top: 120px;
+}
+/* line 12, ../sass/_promo-container.sass */
+.promo-container .promo-support p {
+  font-size: 11px;
+  letter-spacing: 1.65px;
+  margin: 0 0 12px 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+/* line 20, ../sass/_promo-container.sass */
+.promo-container .promo-victoran {
+  right: 8px;
+  top: 116px;
+  width: 260px;
+}
+/* line 24, ../sass/_promo-container.sass */
+.promo-container .promo-victoran h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+/* line 28, ../sass/_promo-container.sass */
+.promo-container .promo-victoran p, .promo-container .promo-victoran a {
+  font-size: 11px;
+  line-height: 16px;
+  margin-bottom: 0;
+  opacity: 0.9;
+  color: #fff;
+}
+/* line 35, ../sass/_promo-container.sass */
+.promo-container .promo-followers {
+  font-family: helveticacoub-bold, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 11px;
+  top: 528px;
+  left: -5px;
+}
+/* line 40, ../sass/_promo-container.sass */
+.promo-container .promo-followers .followers-counter {
+  float: left;
+}
+/* line 42, ../sass/_promo-container.sass */
+.promo-container .promo-followers .followers-counter .counter_value {
+  font-size: 36px;
+}
+/* line 44, ../sass/_promo-container.sass */
+.promo-container .promo-followers .followers-counter p {
+  display: inline;
+  font-size: 14px;
+  line-height: 44px;
+}
+/* line 49, ../sass/_promo-container.sass */
+.promo-container .promo-followers .follow_btn {
+  float: left;
+  top: -2px;
+  float: left;
+  margin-left: 7px;
+  height: 30px;
+  width: 108px;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: #FFF;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+/* line 34, ../sass/_common.sass */
+.promo-container .promo-followers .follow_btn:hover {
+  box-shadow: 0px 0px 0px 3px #1e39f6;
+}
+/* line 56, ../sass/_promo-container.sass */
+.promo-container .promo-followers .follow_btn::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  background: url('../img/icn_follow.svg?1439459974');
+  width: 23px;
+  height: 13px;
+}
+/* line 66, ../sass/_promo-container.sass */
+.promo-container .promo-followers .follow_btn p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  margin-left: 36px;
 }
 
 /*# sourceMappingURL=bundle.css.map */

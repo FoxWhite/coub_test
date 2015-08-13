@@ -1,0 +1,69 @@
+.promo-container
+    color: #fff
+    font-family: 'Samsung Interface', 'Lucida Grande', Helvetica, 'sans-serif'
+    position: relative    
+    
+    .promo-block
+        position: absolute
+
+    .promo-support
+        left: -3px
+        top: 120px
+        p
+            font-size: 11px
+            letter-spacing: 1.65px
+            margin: 0 0 12px 1px
+            text-transform: uppercase
+            opacity: 0.7
+
+
+    .promo-victoran
+        right: 8px
+        top: 116px
+        width: 260px
+        h3
+            font-size: 20px
+            margin-bottom: 4px
+            opacity: 0.7
+        p, a
+            font-size: 11px
+            line-height: 16px
+            margin-bottom: 0
+            opacity: 0.9
+            color: #fff
+    
+    .promo-followers
+        font-family: helveticacoub-bold, Helvetica, Arial, 'Lucida Grande', sans-serif
+        font-size: 11px
+        top: 528px
+        left: -5px
+        .followers-counter
+            float: left
+            .counter_value
+                font-size: 36px
+            p
+                display: inline
+                font-size: 14px
+                line-height: 44px
+
+        .follow_btn
+            float: left
+            top: -2px
+            float: left
+            margin-left: 7px
+            +white_btn(108)
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 9px
+                left: 9px
+                background: image-url('icn_follow.svg')
+                width: 23px
+                height: 13px
+
+
+            p
+                color: rgba(0, 0, 0, 0.7)
+                font-size: 18px
+                margin-left: 36px

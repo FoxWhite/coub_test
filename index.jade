@@ -2,6 +2,7 @@ doctype html
 html(lang='ru')
     head
         meta(charset='UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel='stylesheet', href='css/bundle.css')
         link(rel="icon", href="img/favicon.ico")
         title Full Metal Coub - Coub
@@ -28,3 +29,27 @@ html(lang='ru')
                         .userbtn.ib.login Log in
                     .header-create.ib
                         a(href='http://coub.com/create') Create
+        
+        .page_container
+            .promo-container.mobile-hidden
+                .promo-block.promo-support
+                    p При поддержке
+                    img(src='img/samsung.png')
+                .promo-block.promo-victoran
+                    h3 Виктор Ан
+                    p Шестикратный олимпийский чемпион по шорт треку, показавший всему миру, что такое железная воля.
+                    a(href="http://youtu.be/fJ6sN-0aP8Y", target="_blank") Официальное лицо рекламной компании Samsung GALAXY A в Росcии.
+                .promo-block.promo-followers.clearfix
+                    .followers-counter
+                        span.counter_value 278
+                        p Followers
+                    .follow_btn 
+                        p Follow
+                .promo-block.promo-share
+                .promo-block.promo-description
+
+                .promo-block.promo-phones.tablet-hidden
+                .promo-block.promo-description.tablet-hidden
+
+
+            .coubs-container
