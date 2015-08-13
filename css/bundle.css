@@ -164,15 +164,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 30px;
     box-sizing: border-box;
   }
-  /* line 58, ../sass/_header.sass */
-  .header-search input[type=text]:hover, .header-search input[type=text]:focus {
+  /* line 57, ../sass/_header.sass */
+  .header-search input[type=text]:hover {
     box-shadow: 0px 0px 0px 3px #1e39f6;
   }
-  /* line 60, ../sass/_header.sass */
+  /* line 59, ../sass/_header.sass */
+  .header-search input[type=text]:focus {
+    outline: 0;
+  }
+  /* line 61, ../sass/_header.sass */
   .header-nav {
     margin: 2px 0 0 4px;
   }
-  /* line 63, ../sass/_header.sass */
+  /* line 64, ../sass/_header.sass */
   .header-nav .navitem {
     position: relative;
     cursor: pointer;
@@ -180,23 +184,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     line-height: 26px;
     border-radius: 30px;
   }
-  /* line 69, ../sass/_header.sass */
+  /* line 70, ../sass/_header.sass */
   .header-nav .navitem:hover {
     background-color: #1e39f6;
   }
-  /* line 72, ../sass/_header.sass */
+  /* line 73, ../sass/_header.sass */
   .header-nav .navitem a {
     color: #fff;
     font-size: 13px;
     padding: 0 16px 0 37px;
     text-decoration: none;
   }
-  /* line 77, ../sass/_header.sass */
+  /* line 78, ../sass/_header.sass */
   .header-nav .navitem a::before {
     position: absolute;
     content: "";
   }
-  /* line 81, ../sass/_header.sass */
+  /* line 82, ../sass/_header.sass */
   .header-nav .navitem.featured a::before {
     background: url('../img/icn_star.png?1439416934');
     width: 17px;
@@ -204,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 4px;
     left: 12px;
   }
-  /* line 87, ../sass/_header.sass */
+  /* line 88, ../sass/_header.sass */
   .header-nav .navitem.popular a::before {
     background: url('../img/icn_fire.png?1439416934');
     width: 13px;
@@ -212,11 +216,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     top: 2px;
     left: 15px;
   }
-  /* line 94, ../sass/_header.sass */
+  /* line 95, ../sass/_header.sass */
   .header-login {
     margin-top: 3px;
   }
-  /* line 96, ../sass/_header.sass */
+  /* line 97, ../sass/_header.sass */
   .header-login .userbtn {
     padding: 0px 5px;
     text-decoration: none;
@@ -226,11 +230,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 25px;
     line-height: 25px;
   }
-  /* line 104, ../sass/_header.sass */
+  /* line 105, ../sass/_header.sass */
   .header-login .userbtn:hover {
     text-decoration: underline;
   }
-  /* line 107, ../sass/_header.sass */
+  /* line 108, ../sass/_header.sass */
   .header-create {
     width: 106px;
     height: 30px;
@@ -238,19 +242,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border-radius: 30px;
     background-color: #FFF;
     position: relative;
+    cursor: pointer;
   }
-  /* line 114, ../sass/_header.sass */
+  /* line 116, ../sass/_header.sass */
   .header-create:hover {
     box-shadow: 0px 0px 0px 3px #1e39f6;
   }
-  /* line 116, ../sass/_header.sass */
+  /* line 118, ../sass/_header.sass */
   .header-create a {
     font-size: 14px;
     text-decoration: none;
     margin-left: 43px;
     color: rgba(0, 0, 0, 0.7);
   }
-  /* line 121, ../sass/_header.sass */
+  /* line 123, ../sass/_header.sass */
   .header-create a::before {
     position: absolute;
     content: "";
