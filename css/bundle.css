@@ -400,5 +400,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 18px;
   margin-left: 36px;
 }
+/* line 72, ../sass/_promo-container.sass */
+.promo-container .promo-share {
+  top: 614px;
+}
+/* line 74, ../sass/_promo-container.sass */
+.promo-container .promo-share-header {
+  font-size: 11px;
+  left: -1px;
+  letter-spacing: 1.65px;
+  margin-bottom: 12px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+/* line 82, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .social-btn {
+  position: relative;
+  line-height: 39px;
+  height: 39px;
+  margin-right: 8px;
+  padding-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 90, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .social-btn:hover {
+  box-shadow: 0px 0px 0px 3px #1e39f6;
+}
+/* line 92, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .social-btn::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+}
+/* line 96, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .vk {
+  padding-left: 55px;
+  background-color: #577da2;
+}
+/* line 99, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .vk::before {
+  background: url('../img/icn_vk.png?1439416936');
+  width: 32px;
+  height: 18px;
+  top: 10px;
+  left: 12px;
+}
+/* line 105, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .fb {
+  background-color: #3B5A9A;
+  padding-left: 38px;
+}
+/* line 108, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .fb::before {
+  background: url('../img/icn_fb.png?1439537237');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+}
+/* line 114, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .twitter {
+  width: 45px;
+  padding-right: 0;
+  background-color: #54d4fb;
+}
+/* line 118, ../sass/_promo-container.sass */
+.promo-container .promo-share-buttons .twitter::before {
+  background: url('../img/icn_twitter.png?1439416936');
+  width: 23px;
+  height: 19px;
+  left: 12px;
+}
 
 /*# sourceMappingURL=bundle.css.map */
