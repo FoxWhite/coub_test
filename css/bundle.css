@@ -346,26 +346,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 35, ../sass/_promo-container.sass */
 .promo-container .promo-followers {
+  z-index: 100;
   font-family: helveticacoub-bold, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 11px;
   top: 528px;
   left: -5px;
 }
-/* line 40, ../sass/_promo-container.sass */
+/* line 41, ../sass/_promo-container.sass */
 .promo-container .promo-followers .followers-counter {
   float: left;
 }
-/* line 42, ../sass/_promo-container.sass */
+/* line 43, ../sass/_promo-container.sass */
 .promo-container .promo-followers .followers-counter .counter_value {
   font-size: 36px;
 }
-/* line 44, ../sass/_promo-container.sass */
+/* line 45, ../sass/_promo-container.sass */
 .promo-container .promo-followers .followers-counter p {
   display: inline;
   font-size: 14px;
   line-height: 44px;
 }
-/* line 49, ../sass/_promo-container.sass */
+/* line 50, ../sass/_promo-container.sass */
 .promo-container .promo-followers .follow_btn {
   float: left;
   top: -2px;
@@ -384,7 +385,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .promo-container .promo-followers .follow_btn:hover {
   box-shadow: 0px 0px 0px 3px #1e39f6;
 }
-/* line 56, ../sass/_promo-container.sass */
+/* line 57, ../sass/_promo-container.sass */
 .promo-container .promo-followers .follow_btn::before {
   content: "";
   position: absolute;
@@ -394,17 +395,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 23px;
   height: 13px;
 }
-/* line 66, ../sass/_promo-container.sass */
+/* line 67, ../sass/_promo-container.sass */
 .promo-container .promo-followers .follow_btn p {
   color: rgba(0, 0, 0, 0.7);
   font-size: 18px;
   margin-left: 36px;
 }
-/* line 72, ../sass/_promo-container.sass */
+/* line 73, ../sass/_promo-container.sass */
 .promo-container .promo-share {
   top: 614px;
+  z-index: 100;
 }
-/* line 74, ../sass/_promo-container.sass */
+/* line 76, ../sass/_promo-container.sass */
 .promo-container .promo-share-header {
   font-size: 11px;
   left: -1px;
@@ -413,7 +415,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 0.7;
   text-transform: uppercase;
 }
-/* line 82, ../sass/_promo-container.sass */
+/* line 84, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .social-btn {
   position: relative;
   line-height: 39px;
@@ -423,22 +425,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 90, ../sass/_promo-container.sass */
+/* line 92, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .social-btn:hover {
   box-shadow: 0px 0px 0px 3px #1e39f6;
 }
-/* line 92, ../sass/_promo-container.sass */
+/* line 94, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .social-btn::before {
   position: absolute;
   content: "";
   top: 10px;
 }
-/* line 96, ../sass/_promo-container.sass */
+/* line 98, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .vk {
   padding-left: 55px;
   background-color: #577da2;
 }
-/* line 99, ../sass/_promo-container.sass */
+/* line 101, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .vk::before {
   background: url('../img/icn_vk.png?1439416936');
   width: 32px;
@@ -446,12 +448,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 10px;
   left: 12px;
 }
-/* line 105, ../sass/_promo-container.sass */
+/* line 107, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .fb {
   background-color: #3B5A9A;
   padding-left: 38px;
 }
-/* line 108, ../sass/_promo-container.sass */
+/* line 110, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .fb::before {
   background: url('../img/icn_fb.png?1439537237');
   background-size: cover;
@@ -459,18 +461,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 20px;
   left: 10px;
 }
-/* line 114, ../sass/_promo-container.sass */
+/* line 116, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .twitter {
   width: 45px;
   padding-right: 0;
   background-color: #54d4fb;
 }
-/* line 118, ../sass/_promo-container.sass */
+/* line 120, ../sass/_promo-container.sass */
 .promo-container .promo-share-buttons .twitter::before {
   background: url('../img/icn_twitter.png?1439416936');
   width: 23px;
   height: 19px;
   left: 12px;
+}
+/* line 126, ../sass/_promo-container.sass */
+.promo-container .promo-description {
+  color: #d8d8d8;
+  position: relative;
+  left: -2px;
+  padding: 716px 0 38px;
+  width: 520px;
+}
+/* line 132, ../sass/_promo-container.sass */
+.promo-container .promo-description p {
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+/* line 137, ../sass/_promo-container.sass */
+.promo-container .promo-description p:first-child {
+  margin-bottom: 30px;
+}
+/* line 139, ../sass/_promo-container.sass */
+.promo-container .promo-description a {
+  color: #d8d8d8;
+}
+/* line 142, ../sass/_promo-container.sass */
+.promo-container .promo-description .description-rules a {
+  font-size: 14px;
+  opacity: 0.9;
+  color: #d8d8d8;
 }
 
 /*# sourceMappingURL=bundle.css.map */
