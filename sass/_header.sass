@@ -8,13 +8,23 @@
 
         &-content
             position: relative
-            width: 983px
+            max-width: 983px
             height: 60px
             padding: 15px 0px
             margin: 0 auto
         
             .header-left
                 float: left
+
+                .mobile-controls
+                    li
+                        &.hamburger
+                            height: 20px
+                            width: 24px
+                            background-image: url('http://coub.com/assets/sprites-mobile-s00a2de3b9f-de84f07128e4a32a3418faf33dc542ff.png')
+                            background-position: 0 -665px
+                            background-size: 50px 757px
+
             .header-right
                 float: right 
                 margin-top: 1px  
@@ -120,3 +130,69 @@
                     height: 16px
                     top: 7px
                     left: 12px
+
+
+    @media only screen and (max-width: 1023px) and (min-width: 768px)
+        .tablet-hidden, .t-and-m-hidden
+            display: none
+
+        .header-content
+            width: 640px
+
+            .header-left .header-search input
+                width: 195px
+
+
+
+    @media only screen and (max-width: 767px) and (min-width: 320px)
+        .header-content
+            height: 50px
+            width: 100%
+            .header-left
+                margin-left: 10px
+                .header-search
+                    width: 100%
+                    left: 0
+                    margin: 0
+                    position: absolute
+                    opacity: 0
+                    top: 0
+                    z-index: -10
+                .header-logo
+                    img
+                        width: 100%
+                        height: auto
+            .header-right
+                margin-right: 10px
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

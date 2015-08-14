@@ -1,3 +1,40 @@
+mixin coub-block
+    .coub-block
+        .coub-block-container
+            .viewer
+            .description
+                .object-media.clearfix
+                    .object-img
+                    .object-body
+                        h4.desctiption-title 
+                            span.hashtag #fullmetal 
+                            span what is love
+                        .description-stamp
+                            span.name Belov Georgii 
+                            span.date · Aug 14 ·  
+                            span.views 143,612 views
+                            br
+                            .recoubed-icn
+                            span.recoubed 
+                             |recoubed by 
+                             a(href='http://coub.com/') Full Metal Coub 
+                .object-controls
+                    .ctrl-btn.like-button.ib
+                        .btn-img
+                        .btn-counter 1093
+                    .ctrl-btn.recoub-button.ib
+                        .btn-img
+                        .btn-counter 362
+                .coub-tags
+                    span #test coub  
+                    span #no video
+                    span #img
+                    span #stub
+
+
+
+//- ================= page start =============================
+
 doctype html
 html(lang='ru')
     head
@@ -11,12 +48,17 @@ html(lang='ru')
             .header-bg
             .header-content.clearfix
                 .header-left
+                    .mobile-controls.mobile-visible
+                        ul.header-navlist
+                            li.navitem.hamburger
+                            li.navitem.search
+
                     .header-logo.ib
                         a(href='http://coub.com/')
                             img(src='img/logo.png')
                     .header-search.ib
                         input(type='text', name='search', placeholder ='Search')
-                    .header-nav.ib
+                    .header-nav.ib.t-and-m-hidden
                         ul.header-navlist
                             li.navitem.featured.ib
                                 a(href='http://coub.com/explore') Featured
@@ -26,8 +68,8 @@ html(lang='ru')
                 .header-right
                     .header-login.ib
                         .userbtn.ib.signup Sign up
-                        .userbtn.ib.login Log in
-                    .header-create.ib
+                        .userbtn.ib.login.mobile-hidden Log in
+                    .header-create.ib.t-and-m-hidden
                         a(href='http://coub.com/create') Create
         
         .page_container
@@ -101,9 +143,19 @@ html(lang='ru')
                             span
                         button.viewToggle.ib(type="button")
                             span Newest
-                            
+                .coubs-list(view="list")
+                    +coub-block
+                    +coub-block
+                    +coub-block
+                    +coub-block
+            
 
 
+
+        script(src="js/jquery.min.js")
+        script(src="js/index.js")
+
+//- ============== End of page ==================
 
 
 

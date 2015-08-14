@@ -13,6 +13,7 @@
             opacity: 0.9
             float: left
 
+
         .timeline-controls
             float: right
             margin-top: 6px
@@ -91,24 +92,155 @@
                     background: image-url('icn_dropdown.png')
 
 
+    .coubs-list
+        margin-top: 50px
+
+        .coub-block
+            padding-bottom: 75px
+            width: 100%
+
+            .coub-block-container
+                border-radius: 8px
+                .viewer 
+                    border-radius: 8px
+                    width: 100%
+                    height: 485px
+                    position: relative
+                    background: image-url('stub.png')
+
+                .description
+                    position: relative
+                    background-color: white
+                    box-sizing: border-box
+                    padding: 7px 13px 6px
+                    border-radius: 0px 0px 5px 5px
+
+                    .object-media
+                        .object-img
+                            background: image-url('avatar.jpg')
+                            width: 38px
+                            height: 38px
+                            margin-right: 7px
+                            float: left
+                        .object-body
+                            h4 span
+                                font-size: 14px
+                                line-height: 1.3
+                                font-family: helveticacoub-bold, Helvetica, Arial, 'Lucida Grande', sans-serif
+
+                            .description-stamp
+                                color: rgba(0, 0, 0, 0.5)
+                                font-size: 11px
+                                line-height: 1.7
+                                font-family: Helvetica, Arial, 'Lucida Grande', sans-serif
+                    .object-controls
+                        top: 8px
+                        right: 7px
+                        position: absolute
+                        .ctrl-btn
+                            height: 26px
+                            text-align: center
+                            position: relative
+                            width: 30px
+                            .btn-img
+                                cursor: pointer
+                                display: block
+                                position: absolute
+                                margin: auto
+                                left: 0px
+                                right: 0px
+                                top: 0px
+                                background-image: url('http://coub.com/assets/coub-block-sprites-sd22f0ee872-5ced51bcf92c66ca65769f8e04bb41c0.png')
+                                background-repeat: no-repeat
+
+                            .btn-counter
+                                position: absolute
+                                margin: auto
+                                left: 0px
+                                right: 0px
+                                bottom: -11px
+                                font-size: 11px
+                                color: rgba(0, 0, 0, 0.8)
+                                text-align: center
+                                padding: 5px 0px
+                                cursor: pointer
+                        
+                        .like-button .btn-img
+                            height: 17px
+                            width: 12px
+                            background-position: 0 -286px
+                        .recoub-button .btn-img
+                            height: 13px
+                            width: 22px
+                            background-position: 0 -217px
+                    .coub-tags
+                        display: none
+                        padding-top: 22px
+                        margin-bottom: -7px
+                        font-size: 12px
+                        span
+                            color: rgba(0, 0, 0, 0.5)
+                            margin-right: 3px
+                            cursor: pointer
 
 
 
+        @media only screen and (min-width: 768px)
+            .coub-block 
+                width: 640px
+                padding-bottom: 110px
+                .coub-block-container
+                    .description
+                        width: 100%
+                        padding: 15px 15px 22px
+                        border-radius: 0px 0px 8px 8px
+                        .object-media
+                            .object-body
+                                h4 span
+                                    font-size: 16px
+                                    line-height: 1.19
+                                .description-stamp
+                                    .recoubed-icn
+                                        display: inline-block
+                                        vertical-align: middle
+                                        margin-top: -1px
+                                        height: 12px
+                                        width: 19px
+                                        background-image: url('http://coub.com/assets/sprites-s99e0d9c377-9f46054dd1cf46f22350a92ef0710e77.png')
+                                        background-position: 0 -3249px
+                                        background-repeat: no-repeat
+
+                        .object-controls
+                            top: 12px
+                            right: 7px
+                            .ctrl-btn
+                                width: 42px
+
+                                .btn-counter
+                                    bottom: -21px
+                            .like-button
+                                .btn-img
+                                    height: 22px
+                                    width: 24px
+                                    background-position: 0 -164px
+                                    &:hover
+                                        background-position: 0 -26px
+
+                            .recoub-button
+                                .btn-img
+                                    height: 21px
+                                    width: 26px
+                                    background-position: 0 -611px
+                                    &:hover
+                                        background-position: 0 -581px
+
+                        .coub-tags
+                            display: block
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @media only screen and (max-width: 767px) and (min-width: 320px)
+        .coubs-container-heading
+            width: 100%
 
 
 
