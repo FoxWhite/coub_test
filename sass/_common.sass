@@ -23,9 +23,10 @@
     display: inline-block
     vertical-align: top  
 
-=white_btn($w)
+=white_btn($w:'')
     height: 30px
-    width: #{$w}px
+    @if $w != ''
+        width: #{$w}px
     line-height: 30px
     border-radius: 30px
     background-color: #FFF
