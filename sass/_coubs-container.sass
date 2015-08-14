@@ -1,0 +1,116 @@
+.coubs-container
+    .coubs-container-heading
+        border-top: 1px solid #424242
+        padding-top: 12px
+        margin-bottom: 17px
+        width: 640px
+        
+        h2
+            color: #d8d8d8
+            font-family: 'Samsung Interface', 'Lucida Grande', Helvetica, 'sans-serif'
+            font-size: 24px
+            line-height: 31px
+            opacity: 0.9
+            float: left
+
+        .timeline-controls
+            float: right
+            margin-top: 6px
+            position: relative
+            white-space: nowrap
+            z-index: 100
+            
+            .viewSelector
+                position: relative
+                border: none
+                border-radius: 4px
+                font-size: 0
+                line-height: 0
+                height: 31px
+                width: 34px
+                top: -3px
+                outline: 0
+                cursor: pointer
+                background-color: transparent
+
+                span
+                    background: #fff
+
+                &.active
+                    background-color: #fff
+                    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.33)
+                    span
+                        background: #060b24
+
+                &[view='list']
+                    padding: 3px 0 0 0
+                    margin-right: 4px
+                    span
+                        display: block
+                        height: 2px
+                        margin: 0 auto 2px
+                        width: 12px
+                    
+                &[view='grid']
+                    padding: 1px 0 0
+                    text-align: center
+                    span
+                        display: inline-block
+                        height: 4px
+                        margin: 1px
+                        width: 4px
+                &:hover
+                    box-shadow: 0px 0px 0px 3px #1e39f6
+            
+            .viewToggle
+                margin: -3px 0 0 28px
+                height: 31px
+                border-radius: 3px
+                border: none
+                padding: 0px 15px
+                padding-right: 30px
+                color: rgba(0, 0, 0, 0.7)
+                background-color: white
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(0, 0, 0, 0.04)
+                cursor: pointer
+                span
+                    font-size: 13px
+                    font-family: helveticacoub-bold, Helvetica, Arial, "Lucida Grande", sans-serif
+                    font-weight: bold
+
+                &:hover
+                    box-shadow: 0px 0px 0px 3px #1e39f6    
+
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 9px
+                    height: 5px
+                    right: 11px
+                    top: 10px
+                    background: image-url('icn_dropdown.png')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
