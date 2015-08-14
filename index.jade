@@ -50,8 +50,8 @@ html(lang='ru')
                 .header-left
                     .mobile-controls.mobile-visible
                         ul.header-navlist
-                            li.navitem.hamburger
-                            li.navitem.search
+                            li.navitem.hamburger.ib
+                            li.navitem.search.ib
 
                     .header-logo.ib
                         a(href='http://coub.com/')
@@ -144,6 +144,10 @@ html(lang='ru')
                         button.viewToggle.ib(type="button")
                             span Newest
                 .coubs-list(view="list")
+                    +coub-block
+                    +coub-block
+                    +coub-block
+                    +coub-block
                     +coub-block
                     +coub-block
                     +coub-block
